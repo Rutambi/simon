@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{page.title}}</title>
+	<!-- All the content inside the head -->
+			<!-- Link to google fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Abel|Maven+Pro:500" rel="stylesheet">
+            <!-- This is a link to Gridlex -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
+			<!-- Link to stylesheet for CSS -->
+			<link rel="stylesheet" type="text/css" href="/styles/main.css">
+			<!-- This is the stylesheet for the JQuery slider -->
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
+			<!-- To make the website responsive accross all devices -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Link to Font awesome -->
+			<script src="https://use.fontawesome.com/9ffdc143fc.js"></script>
+	</head>
+<body>
+	<header id="home" class="home">
+		<!-- This is the mobile navigation -->
+		<div id="container" class="grid mob-show">
+
+    <div class="col-6">
+      <img src="/images/logo.png" class="mobileLogo">
+    </div>
+    <div class="col-6">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>    
+      </a>
+      <a class="col-12 center" href="#about" class="toggle-mobile-menu">Intro</a>
+      <a class="col-12 center" href="#services" class="toggle-mobile-menu">Services</a>
+      <a class="col-12 center" href="#experience" class="toggle-mobile-menu">Experience</a>
+      <a class="col-12 center" href="#contact" class="toggle-mobile-menu">Contact Me</a>
+       <a class="col-12 center" href="#Clients" class="toggle-mobile-menu">Clients</a>
+  </nav>
+  
+</div> <!-- #container -->
+
+		<!--Mobile responsive navigation ends here -->
+
+		<nav id="sticky-button" class="navbar mob-hide">
+			<div>
+				<img src="images/logo.png" class="logoimage">
+			</div>
+            <div class="topmenu">
+				<a href="#about">Intro</a>
+				<a href="#services">Services</a>
+				<a href="#experience">Experiences</a>
+				<a href="#contact">Contact Me</a>
+				<a href="#Clients">Clients</a>
+			</div>
+		</nav>
+		<div class="intro">
+			<h1>
+				Simon Pierre Niwemugizi
+			</h1>
+			<h2>
+				Front-End Web Developer
+			</h2>
+			<h2>Computer Technician</h2>
+		</div>
+	</header>	
+
+		{{content}}
+		<footer id="contact" class="grid-center">
+		<h2 class="headings"> Contact me </h2>
+		<div class="grid-center">
+			<form method="post" class="grid-center" action="http://formspree.io/rutambi@icloud.com">
+			<label class="col-7">Enter your first name *</label>
+			<input type="text" name="name" class="col-7"/>
+			<label class="col-7">Enter your second name *</label>
+			<input type="text" name="" class="col-7" />
+			<label class="col-7">Enter your email address</label>
+			<input type="text" name="" class="col-7"/>
+			<label class="col-7">Enter your Phone number</label>
+			<input type="text" name="" class="col-7" />
+			<label class="col-7">Enter your message for me here</label>
+			<textarea class="col-7" ></textarea>
+		<br>
+			<button type="submit" class="submitbutton col-6">Send</button>
+			</form>
+		</div>
+	
+
+	<div class="grid-center">
+		<!-- SLIDER -->
+	</div>
+
+	<nav class="grid-center col-6 footernav">
+		<a href=""><i class="fa fa-facebook" ></i></a>
+		<a href=""><i class="fa fa-instagram"></i></a>
+	</nav>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+<script src="/scripts/scripts.js"></script>
+</body>
+</html>
