@@ -64,6 +64,7 @@ $('a').on('click', changeBodyClass);
     slideshow: true,
     directionNav: false
     
+    
   });
 
  // Code For Sticky Nav

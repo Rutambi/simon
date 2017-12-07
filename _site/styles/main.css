@@ -1,8 +1,15 @@
 *{
 	box-sizing: border-box;
-	margin: 0;
-	padding:0;
+/*	margin: 0;
+	padding:0;*/
 	transition: all 300ms ease-in-out;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 100vw;
+
 }
 section{
 	padding:5% 0;
@@ -31,6 +38,7 @@ align-items: center;
 .logoimage{
 	height: 60px;
 	padding-left: 30px;
+	max-width: 100%
 }
 
 .topmenu{
@@ -56,7 +64,7 @@ img{
 #mobile-navigation{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 50%;
   top: 0;
   left: 0;
   z-index: 2;
@@ -116,7 +124,7 @@ h2, h3, h4{
 }
 
 .about {
-	height: 80vh;
+	/*height: 80vh; */
 	/*border: 4px dashed red;*/
 }
 /*
@@ -150,13 +158,14 @@ h2, h3, h4{
 /*Slider Code*/
 /* HERO */
 #hero{
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   max-width: 100%;
-  background-color: #000;
+  /*background-color: #000;*/
+  /*border: 4px dashed red;*/
 }
 #hero .slides li{
   position: relative;
-  height: 40vh;
+  height: 60vh;
 }
 #hero .slides li h3{
   position: absolute;
@@ -176,9 +185,18 @@ h2, h3, h4{
   z-index: 1;
 }
 
+li h3 {
+	background: rgba(0,0,0,.3);
+	padding: 20px 0;
+	font-size: 2em;
+}
+
 /* HELPERS */
 .add-object-fit{
   object-fit: cover;
+}
+.toggle-mobile-menu{
+	margin-left: 30px;
 }
 
 
@@ -190,7 +208,31 @@ h2, h3, h4{
 	.mob-hide{
 		display:none !important;
 	}
+	.services{
+		margin: 0
+	}
+	
 }
+
+@media all and (max-width: 930){
+	.logoimage{
+		height: 10%
+		width: 10%;
+	}
+	.services{
+		margin: 0
+	}
+}
+@media all and (max-width: 414){
+	.headings{
+		font-size: 8px;
+	}
+	.services{
+		margin: 0
+	}
+
+}
+
 
 
 
